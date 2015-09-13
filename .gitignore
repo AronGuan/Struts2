@@ -1,7 +1,6 @@
 #Windows
 .settings
 build
-src
 .classpath
 .project
 META-INF
