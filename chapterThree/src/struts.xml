@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="chapterThreePublic" namespace="/chapterThree" extends="struts-default">
+		<action name="PortfolioHomePage">
+			<result>/chapterThree/PortfolioHomePage.jsp</result>
+		</action>
+		
+		<action name="ViewPortfolios" >
+			<result>/chapterThree/ViewPortfolios.jsp</result>
+        </action>
+ 
+ 		<action name="Registration" >
+			<result>/chapterThree/Registration.jsp</result>
+        </action>
+
+        <action name="Register" class="manning.chapterThree.Register">
+			<result>/chapterThree/RegistrationSuccess.jsp</result>
+			<result name="input">/chapterThree/Registration.jsp</result>
+        </action>
+        
+        <action name="RegistrationOB">
+        	<result>/chapterThree/Registration_OB.jsp</result>
+        </action>
+        
+        
+        <action name="RegisterOB" class="manning.chapterThree.ObjectBackedRegister">
+        	<result>/chapterThree/RegistrationSuccess_OB.jsp</result>
+        	<result name="input">/chapterThree/Registration_OB.jsp</result>
+        </action>
+        
+        <action name="RegistrationMD">
+        	<result>/chapterThree/Registration_MD.jsp</result>
+        </action>
+        
+        <action name="RegisterMD" class="manning.chapterThree.ModelDrivenRegister">
+        	<result>/chapterThree/RegistrationSuccess.jsp</result>
+        	<result name="input">/chapterThree/Registration_MD.jsp</result>
+        </action>
+	</package>
+	
+	<package name="chapterThreeSecure" namespace="/chapterThree/secure" extends="struts-default">
+		<action name="AdminPortfolio">
+			<result>/chapterThree/AdminPortfolio.jsp</result>
+		</action>
+		
+		<action name="AddImage">
+			<result>/chapterThree/ImageUploadForm.jsp</result>
+		</action>
+		
+		<action name="ImageUpload" class="manning.chapterThree.ImageUpload">
+					<param name="fileSystemPath">./portfolioFS/</param>
+					<result>/chapterThree/ImageAdded.jsp</result>
+					<result name="input">/chapterThree/ImageUploadForm.jsp</result>
+		</action>
+		
+		<action name="RemoveImage">
+			<result>/chapterThree/ImageRemoved.jsp</result>
+		</action>
+	</package>
+</struts>
+
+		
