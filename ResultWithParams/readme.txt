@@ -1,5 +1,5 @@
-´ø²ÎÊýµÄ½á¹û¼¯
-struts.xmlÍ¨¹ýOGNL±í´ïÊ½${XX}À´»ñÈ¡ÖµÕ»ÉÏµÄÖµ
+å¸¦å‚æ•°çš„ç»“æžœé›†
+struts.xmlé€šè¿‡OGNLè¡¨è¾¾å¼${XX}æ¥èŽ·å–å€¼æ ˆä¸Šçš„å€¼
 
-ÁíÍâ¿ÉÒÔ¿´³ö Ö»Òª·¢³öÇëÇó£¬sturts2¾Í»á°ïÄãÉú³ÉActionContext¶ÔÏó
-µ«ÊÇÖ»ÓÃÓÐActionµÄÇé¿öÏÂ£¬²Å»áÉú³ÉValueStack.
+å¦å¤–å¯ä»¥çœ‹å‡º åªè¦å‘å‡ºè¯·æ±‚ï¼Œsturts2å°±ä¼šå¸®ä½ ç”ŸæˆActionContextå¯¹è±¡
+ä½†æ˜¯åªæœ‰Actionçš„æƒ…å†µä¸‹ï¼Œæ‰ä¼šç”ŸæˆValueStack.
