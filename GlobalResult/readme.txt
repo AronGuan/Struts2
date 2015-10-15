@@ -1,2 +1,2 @@
-全局结果
+鍏ㄥ眬缁撴灉
 <global-result>
