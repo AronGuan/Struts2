@@ -18,6 +18,16 @@
 		<li>set 从ActionContext:<s:property value="#adminName"/> </li>
 		<li>set设定范围:<s:set var="adminPassword" value="password" scope="session"></s:set> </li>
 		<li>set范围内取值:<s:property value="#session.adminPassword"/></li>
+		<hr/>
+		<li>bean:查看debug情况
+			<s:bean var="myDog" name="pers.aron.Dog">
+				<s:param name="name" value="'candy'"></s:param>
+			</s:bean>
+		</li>
+		<hr/>
+		<s:if test="#parameters.age[0] < 0">wrong</s:if>
+		<s:elseif test="#parameters.age[0] < 20">too yong</s:elseif>
+		<s:else>yeah!</s:else>
 	</ol>
 		<s:debug/>
 	</body>
