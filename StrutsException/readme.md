@@ -1,4 +1,4 @@
-## 全局异常处理  
+## 鍏ㄥ眬寮傚父澶勭悊  
          <global-results>
 	          <result name="error">/error.jsp</result>
          </global-results>  
@@ -8,4 +8,3 @@
 		</global-exception-mappings>
 		
 		
-		十分发达省份
