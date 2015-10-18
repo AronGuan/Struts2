@@ -7,8 +7,9 @@ UI标签
 
 控制标签
 1.if/elseif
+2.iterator 其中一个属性status  有count,index,even,odd,first,last常量
 
-$#%的区别
+\$#%的区别  
 1.$用于i18n和struts配置文件
 2.#取得ActionContext的值
 3.%将原本的文本属性解析为ognl,对于本来就是ognl的属性不起作用

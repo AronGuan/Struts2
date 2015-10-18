@@ -28,6 +28,32 @@
 		<s:if test="#parameters.age[0] < 0">wrong</s:if>
 		<s:elseif test="#parameters.age[0] < 20">too yong</s:elseif>
 		<s:else>yeah!</s:else>
+		
+		<hr/>
+		<li>自定义变量:<br/>
+		<s:iterator value="{'aaa','bbb','ccc'}" var="x">
+			<s:property value="#x.toUpperCase()"/>
+		</s:iterator>
+		</li>
+		<li>
+		<s:iterator value="{'aaa','bbb','ccc'}" status="status">
+			<s:property/>
+			遍历过的元素总数:<s:property value="#status.count"/>
+			遍历过的元素索引:<s:property value="#status.index"/>
+			当前是偶数:<s:property value="#status.even"/>
+			当前是奇数:<s:property value="#status.odd"/>
+			是第一个元素吗？<s:property value="#status.first"/>
+			是最后一个元素吗？<s:property value="#status.last"/>
+			<br/>
+		</s:iterator>
+		</li>
+		
+		<li>
+		<s:iterator value="#{1:'a',2:'b',3:'c'}" var="x">
+			<s:property value="#x.key"/>|<s:property value="#x,value"/><br/>
+		</s:iterator>
+		</li>
+		
 	</ol>
 		<s:debug/>
 	</body>
